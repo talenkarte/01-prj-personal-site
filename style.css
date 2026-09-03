@@ -1,1 +1,290 @@
-/* Add you CSS here */
+/* -------------------------
+   FONTS
+   ------------------------- */
+
+/* Limbus-style display font */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@400;700&display=swap');
+
+
+/* -------------------------
+   BASIC PAGE
+   ------------------------- */
+
+body {
+    font-family: 'Roboto Slab', serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #4a4a4a;
+    color: #333;
+}
+
+
+/* -------------------------
+   HEADER
+   ------------------------- */
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+header h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+}
+
+
+/* -------------------------
+   NAVIGATION
+   ------------------------- */
+
+nav {
+    background-color: #222;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    font-family: 'Bebas Neue', sans-serif;
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    color: #e2841a;
+    text-decoration: none;
+}
+
+
+/* -------------------------
+   MAIN CONTENT
+   ------------------------- */
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+/* -------------------------
+   SECTIONS
+   ------------------------- */
+
+section {
+    background-color: #2e2c2a;
+    color: #e8e2d6;
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Section title nameplate */
+.section-plate {
+    margin: -25px -25px 25px;
+    padding: 0;
+}
+
+.plate-dots {
+    display: flex;
+    gap: 4px;
+    padding: 10px 0 6px 14px;
+}
+
+.plate-dots .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #f0a848, #b3550c);
+    border: 1px solid #7a3908;
+}
+
+.plate-row {
+    display: flex;
+    align-items: center;
+}
+
+.plate-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #f0a848, #b3550c);
+    border: 2px solid #7a3908;
+    font-size: 16px;
+    margin-left: 10px;
+    z-index: 2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.plate-label {
+    background: linear-gradient(135deg, #e2841a, #a84a0a);
+    clip-path: polygon(0 0, 100% 0, 92% 100%, 0 100%);
+    padding: 9px 34px 9px 22px;
+    margin-left: -14px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+
+/* -------------------------
+   PROJECTS / SKILL CARDS
+   ------------------------- */
+
+.project-container {
+    display: flex;
+    gap: 28px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    position: relative;
+    width: 260px;
+    background: linear-gradient(180deg, #1c1812 0%, #121009 100%);
+    border: 1px solid #3a2f22;
+    border-radius: 4px;
+    padding-bottom: 18px;
+    color: #e8e2d6;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+}
+
+/* Coin-style badge tucked into the top-left corner */
+.skill-card-badges {
+    position: absolute;
+    top: -12px;
+    left: -10px;
+    z-index: 2;
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #f0a848, #b3550c);
+    border: 2px solid #7a3908;
+    font-size: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.45);
+}
+
+/* Angled title bar, like a skill name plate */
+.skill-title-bar {
+    background: linear-gradient(135deg, #e2841a, #a84a0a);
+    clip-path: polygon(0 0, 100% 0, 93% 100%, 0 100%);
+    padding: 14px 26px 14px 22px;
+    margin: 12px 0 0;
+}
+
+.skill-title-bar h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 26px;
+    letter-spacing: 1px;
+    color: #fff;
+    margin: 0;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.skill-meta {
+    margin: 10px 0 0;
+    padding: 0 22px 12px;
+    font-size: 13px;
+    color: #b8b0a0;
+    border-bottom: 1px solid #322a1f;
+}
+
+.skill-meta .meta-icon {
+    margin-right: 4px;
+}
+
+.skill-meta .dot {
+    margin: 0 4px;
+    color: #6b6153;
+}
+
+.skill-body {
+    padding: 12px 22px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skill-row {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.55;
+}
+
+.tag {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 6px;
+    white-space: nowrap;
+}
+
+.tag-blue {
+    color: #5b9bd9;
+}
+
+.tag-green {
+    color: #7bb661;
+}
+
+/* Highlighted keywords, Limbus-style */
+.kw {
+    color: #d64545;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+/* -------------------------
+   RESPONSIVE
+   ------------------------- */
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 36px;
+    }
+
+    header {
+        padding: 25px;
+    }
+}
+
+
+/* -------------------------
+   FOOTER
+   ------------------------- */
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+}
